@@ -1,0 +1,26 @@
+# [[rulesets]]
+# group = "[groupname]"
+# ruleset = "URL"
+# type = "surge-ruleset"
+# interval = 86400
+#
+# supported type: surge-ruleset, quantumultx, clash-domain, clash-ipcidr, clash-classic
+# default type: surge-ruleset
+
+# 绕过局域网
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml"
+type = "clash-classic"
+
+# 绕过 BT 与下载器
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml"
+type = "clash-classic"
+
+# 绕过 PT
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/PrivateTracker/PrivateTracker.yaml"
+type = "clash-classic"

@@ -1,0 +1,15 @@
+# [[rulesets]]
+# group = "[groupname]"
+# ruleset = "URL"
+# type = "surge-ruleset"
+# interval = 86400
+#
+# supported type: surge-ruleset, quantumultx, clash-domain, clash-ipcidr, clash-classic
+# default type: surge-ruleset
+
+# 广告拦截 自带规则修正
+[[rulesets]]
+group = "🛑 全部拦截"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Advertising/Advertising_Classical.yaml"
+type = "clash-classic"
+

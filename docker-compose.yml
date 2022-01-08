@@ -1,0 +1,15 @@
+services:  
+  subconverter:
+    image: tindy2013/subconverter:latest
+    container_name: subconverter
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./custom:/base/custom
+      - ./profiles:/base/profiles
+      - ./pref.toml:/base/pref.toml
+      # - ./gistconf.ini:/base/gistconf.ini
+    ports:
+      - 25500:25500
+    restart: unless-stopped
+

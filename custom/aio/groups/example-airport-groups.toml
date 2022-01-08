@@ -1,0 +1,187 @@
+# [[custom_groups]]
+# name = "🍭 服务名称"
+# type = "select"
+# rule = [
+#     "[]✈️ 手动选择",
+#     "[]🔰 节点选择",
+#     "[]🎯 全部直连",
+#     "[]🇭🇰 香港接入",
+#     "[]🇺🇸 美国接入",
+#     "[]🇯🇵 日本接入",
+#     "[]🇨🇳 台湾接入",
+#     "[]🇸🇬 新加坡接入",
+#     "[]🇰🇷 韩国接入",
+#     "[]🇮🇳 印度接入",
+#     "[]🇬🇧 英国接入",
+#     "[]🇫🇷 法国接入",
+#     "[]🇨🇦 加拿大接入",
+#     "[]🇦🇺 澳大利亚接入",
+#     "[]🇮🇪 爱尔兰接入",
+#     "[]🇷🇺 俄罗斯接入",
+#     "[]🇹🇷 土耳其接入",
+#     "[]🇦🇷 阿根廷接入",
+#     "[]🇧🇷 巴西接入",
+#     "[]🏳️‍🌈 IPV6线路",
+#     "[]🇨🇳 回国线路",
+# ]
+
+# [[custom_groups]]
+# name = "♻️ 自动选择"
+# type = "url-test"
+# rule = [".*"]
+# url = "http://www.gstatic.com/generate_204"
+# interval = 300
+
+# How to:
+# 1. Replace "airportName" to what you want.
+# 2. Replace "tagName" to what you have set in config.
+# 3. Comment/delete the areas you don't need.
+
+[[custom_groups]]
+name = "✈️ airportName"
+type = "select"
+rule = [
+    "[]🇭🇰 airportName HK",
+    "[]🇺🇸 airportName US",
+    "[]🇯🇵 airportName JP",
+    "[]🇨🇳 airportName TW",
+    "[]🇸🇬 airportName SG",
+    "[]🇰🇷 airportName KR",
+    "[]🇮🇳 airportName IN",
+    "[]🇬🇧 airportName UK",
+    "[]🇫🇷 airportName FR",
+    "[]🇨🇦 airportName CA",
+    "[]🇦🇺 airportName AU",
+    "[]🇹🇷 airportName TR",
+    "[]🇦🇷 airportName AR",
+    "[]🇧🇷 airportName BR",
+    "[]🏳️‍🌈 airportName IPV6",
+    "[]🇨🇳 airportName CN",
+    "!!GROUP=tagName",
+]
+
+[[custom_groups]]
+name = "🇭🇰 airportName HK"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bHK[G]?\\b|Hong.*?Kong|\\bHKT\\b|\\bHKBN\\b|\\bHGC\\b|\\bWTT\\b|\\bCMI\\b|[^-]港)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇺🇸 airportName US"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bUS[A]?\\b|America|United.*?States|美国|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇯🇵 airportName JP"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bJP[N]?\\b|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇨🇳 airportName TW"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bTW[N]?\\b|Taiwan|新北|彰化|\\bCHT\\b|台湾|[^-]台|\\bHINET\\b)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇸🇬 airportName SG"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bSG[P]?\\b|Singapore|新加坡|狮城|[^-]新)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇰🇷 airportName KR"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bK[O]?R\\b|Korea|首尔|韩|韓)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇮🇳 airportName IN"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bIN[D]?\\b|India|Mumbai|印度|孟买|加尔各答|贾坎德|泰米尔纳德)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇬🇧 airportName UK"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bUK\\b|\\bGB[R]?\\b|England|United.*?Kingdom|London|英国|[^-]英|伦敦)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇫🇷 airportName FR"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bFR[A]?\\b|France|Paris|法国|巴黎)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇨🇦 airportName CA"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bCA[N]?\\b|Canada|Toronto|Montreal|Vancouver|加拿大|蒙特利尔|温哥华|楓葉|枫叶)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇦🇺 airportName AU"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bAU[S]?\\b|Australia|Sydney|澳大利亚|澳洲|悉尼)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇮🇪 airportName IE"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(Ireland|Dublin|爱尔兰|都柏林)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇷🇺 airportName RU"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bRU[S]?\\b|Russia|Moscow|Petersburg|Siberia|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄罗斯|[^-]俄)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇹🇷 airportName TR"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(Turkey|土耳其|伊斯坦布尔)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇦🇷 airportName AR"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(Argentina|阿根廷)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇧🇷 airportName BR"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(Brazil|Paulo|巴西|圣保罗)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🏳️‍🌈 airportName IPV6"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(ipv6|IPV6)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300
+
+[[custom_groups]]
+name = "🇨🇳 airportName CN"
+type = "url-test"
+rule = ["!!GROUP=tagName!!(?i:\\bC[H]?N\\b|China|回国|中国[^-]|江苏[^-]|北京[^-]|上海[^-]|广州[^-]|深圳[^-]|杭州[^-]|常州[^-]|徐州[^-]|青岛[^-]|宁波[^-]|镇江[^-]|成都[^-]|back)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 300

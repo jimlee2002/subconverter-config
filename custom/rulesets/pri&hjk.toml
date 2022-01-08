@@ -1,0 +1,20 @@
+# [[rulesets]]
+# group = "[groupname]"
+# ruleset = "URL"
+# type = "surge-ruleset"
+# interval = 86400
+#
+# supported type: surge-ruleset, quantumultx, clash-domain, clash-ipcidr, clash-classic
+# default type: surge-ruleset
+
+# 隐私保护 (广告拦截已包含)
+[[rulesets]]
+group = "🛑 全部拦截"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Privacy/Privacy_Classical.yaml"
+type = "clash-classic"
+
+# 反劫持 (广告拦截已包含)
+[[rulesets]]
+group = "🛑 全部拦截"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Hijacking/Hijacking.yaml"
+type = "clash-classic"

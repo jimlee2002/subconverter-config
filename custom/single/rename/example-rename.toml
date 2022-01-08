@@ -1,0 +1,23 @@
+[[rename_node]]
+match = '\(?((x|X)?(\d+)(\.?\d+)?)((\s?倍率?)|(x|X))\)?'
+replace = "$1x"
+
+# [[rename_node]]
+# match = '!!GROUP=tagName!!(.+)'
+# replace = "airportName $1"
+
+# [[rename_node]]
+# match = '(.+)'
+# replace = "airportName $1"
+
+# [[nrename_node]]
+# match = ""
+# replace = ""
+
+[[rename_node]]
+match = '(.+)'
+replace = "airportName $1"
+
+[[rename_node]]
+match = "中国-(.+)"
+replace = "$1"

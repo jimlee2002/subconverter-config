@@ -1,0 +1,58 @@
+version = 1
+[custom]
+# [common]
+# Options for custom base configuration file
+# clash_rule_base = "base/forcerule.yml"
+# surge_rule_base = "base/surge.conf"
+# surfboard_rule_base = "base/surfboard.conf"
+# mellow_rule_base = "base/mellow.conf"
+# quan_rule_base = "base/quan.conf"
+# quanx_rule_base = "base/quanx.conf"
+
+# Options for filtering nodes
+# include_remarks = []
+# exclude_remarks = []
+
+
+# [emojis]
+# Options for adding emojis
+add_emoji = true
+# remove_old_emoji = true
+
+
+# [[custom_groups]]
+# Import main selector groups
+[[custom_groups]]
+import = "custom/single/groups/groups-mini-select.toml"
+
+
+# [ruleset]
+# Enable generating rules with rulesets
+enable_rule_generator = true
+
+# Overwrite the existing rules in rule_base
+overwrite_original_rules = true
+
+# Perform a ruleset update on request
+update_ruleset_on_request = false
+
+# Import rulesets
+[[rulesets]]
+import = "custom/rulesets/lan.toml"
+
+# [[rulesets]]
+# import = "custom/rulesets/ad.toml"
+
+# [[rulesets]]
+# import = "custom/rulesets/ad-mini.toml"
+
+[[rulesets]]
+import = "custom/rulesets/pri&hjk.toml"
+
+[[rulesets]]
+import = "custom/rulesets/rulesets.toml"
+
+
+# [[template_args]]
+# key = "clash.dns.port"
+# value = "5353"

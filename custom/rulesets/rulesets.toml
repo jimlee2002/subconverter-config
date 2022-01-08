@@ -1,0 +1,180 @@
+# [[rulesets]]
+# group = "[groupname]"
+# ruleset = "URL"
+# type = "surge-ruleset"
+# interval = 86400
+#
+# supported type: surge-ruleset, quantumultx, clash-domain, clash-ipcidr, clash-classic
+# default type: surge-ruleset
+
+# Ondrive
+[[rulesets]]
+group = "☁️ Onedrive"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OneDrive/OneDrive.yaml"
+type = "clash-classic"
+
+# 微软服务
+[[rulesets]]
+group = "Ⓜ️ 微软服务"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml"
+type = "clash-classic"
+
+# # Google Voice
+# [[rulesets]]
+# group = "📞 虚拟电话"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GoogleVoice/GoogleVoice.yaml"
+# type = "clash-classic"
+
+# 谷歌服务
+[[rulesets]]
+group = "🍭 谷歌服务"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml"
+type = "clash-classic"
+
+# Apple 服务
+[[rulesets]]
+group = "🍎 苹果服务"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple.yaml"
+type = "clash-classic"
+
+# 游戏平台:
+# SteamCN 直连规则
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/SteamCN/SteamCN.yaml"
+type = "clash-classic"
+# Steam 代理规则
+[[rulesets]]
+group = "🎮 Steam"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml"
+type = "clash-classic"
+
+# # Origin
+# [[rulesets]]
+# group = "🎮 Origin"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Origin/Origin.yaml"
+# type = "clash-classic"
+
+# # UBI
+# [[rulesets]]
+# group = "🎮 Ubi"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/UBI/UBI.yaml"
+# type = "clash-classic"
+
+# # Epic
+# [[rulesets]]
+# group = "🎮 Epic"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Epic/Epic.yaml"
+# type = "clash-classic"
+
+# # 游戏平台-总
+# [[rulesets]]
+# group = "🎮 游戏平台"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml"
+# type = "clash-classic"
+
+# 流媒体平台：
+# Spotify
+[[rulesets]]
+group = "🎵 Spotify"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.yaml"
+type = "clash-classic"
+
+# Qobuz
+[[rulesets]]
+group = "🎵 Qobuz"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Qobuz/Qobuz.yaml"
+type = "clash-classic"
+
+# TIDAL
+[[rulesets]]
+group = "🎵 TIDAL"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/TIDAL/TIDAL.yaml"
+type = "clash-classic"
+
+# Youtube
+[[rulesets]]
+group = "🎥 Youtube"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.yaml"
+type = "clash-classic"
+
+# Netflix
+[[rulesets]]
+group = "🎥 Netflix"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml"
+type = "clash-classic"
+
+# TikTok
+[[rulesets]]
+group = "🎥 TikTok"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/TikTok/TikTok.yaml"
+type = "clash-classic"
+
+# 国外媒体
+[[rulesets]]
+group = "🌍 国外媒体"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia.yaml"
+type = "clash-classic"
+
+# 网易云音乐
+[[rulesets]]
+group = "🎵 网易云音乐"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml"
+type = "clash-classic"
+
+# 🌍 国内媒体-港澳台版切换
+[[rulesets]]
+group = "🌍 国内媒体-港澳台版切换"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AsianMedia/AsianMedia.yaml"
+type = "clash-classic"
+
+# 国内媒体
+[[rulesets]]
+group = "🌏 国内媒体"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaMedia/ChinaMedia.yaml"
+type = "clash-classic"
+
+# Telegram
+[[rulesets]]
+group = "📲 Telegram"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml"
+type = "clash-classic"
+
+# Twitter
+[[rulesets]]
+group = "📲 Twitter"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml"
+type = "clash-classic"
+
+# 默认代理国外
+[[rulesets]]
+group = "🔰 节点选择"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Global/Global_Classical.yaml"
+type = "clash-classic"
+
+# 绕过中国大陆
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/China/China.yaml"
+type = "clash-classic"
+
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPs/ChinaIPs_Classical.yaml"
+type = "clash-classic"
+
+# [[rulesets]]
+# group = "🎯 全部直连"
+# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPsBGP/ChinaIPsBGP_Classical.yaml"
+# type = "clash-classic"
+
+# 绕过中国 IP
+[[rulesets]]
+group = "🎯 全部直连"
+ruleset = "[]GEOIP,CN"
+
+# 兜底策略
+[[rulesets]]
+group = "🐟 漏网之鱼"
+ruleset = "[]FINAL"
+

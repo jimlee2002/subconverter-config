@@ -21,9 +21,12 @@ add_emoji = true
 
 
 # [[custom_groups]]
-# Import main selector groups
+# Import proxy groups
 [[custom_groups]]
-import = "custom/single/groups/groups-mini-select.toml"
+import = "custom/single/groups/proxy-groups-mini.toml"
+
+[[custom_groups]]
+import = "custom/single/groups/node-groups-mini-select.toml"
 
 
 # [ruleset]

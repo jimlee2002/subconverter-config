@@ -21,9 +21,12 @@ add_emoji = true
 
 
 # [[custom_groups]]
-# Import main selector groups
+# Import proxy groups
 [[custom_groups]]
-import = "custom/single/groups/groups-max-auto.toml"
+import = "custom/single/groups/proxy-groups-max.toml"
+
+[[custom_groups]]
+import = "custom/single/groups/node-groups-max-auto.toml"
 
 
 # [ruleset]

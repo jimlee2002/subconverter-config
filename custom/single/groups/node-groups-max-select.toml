@@ -1,0 +1,160 @@
+# [[custom_groups]]
+# name = "🍭 服务名称"
+# type = "select"
+# rule = [
+#     "[]✈️ 手动选择",
+#     "[]🔰 节点选择",
+#     "[]🎯 全部直连",
+#     "[]🇭🇰 香港接入",
+#     "[]🇺🇸 美国接入",
+#     "[]🇯🇵 日本接入",
+#     "[]🇨🇳 台湾接入",
+#     "[]🇸🇬 新加坡接入",
+#     "[]🇰🇷 韩国接入",
+#     "[]🇮🇳 印度接入",
+#     "[]🇬🇧 英国接入",
+#     "[]🇫🇷 法国接入",
+#     "[]🇨🇦 加拿大接入",
+#     "[]🇦🇺 澳大利亚接入",
+#     "[]🇮🇪 爱尔兰接入",
+#     "[]🇷🇺 俄罗斯接入",
+#     "[]🇹🇷 土耳其接入",
+#     "[]🇦🇷 阿根廷接入",
+#     "[]🇧🇷 巴西接入",
+#     "[]🏳️‍🌈 IPV6线路",
+#     "[]🇨🇳 回国线路",
+# ]
+
+# [[custom_groups]]
+# name = "♻️ 自动选择"
+# type = "url-test"
+# rule = [".*"]
+# url = "http://www.gstatic.com/generate_204"
+# interval = 300
+
+# Areas Nodes Select Groups
+[[custom_groups]]
+name = "🇭🇰 香港接入"
+type = "select"
+rule = [
+    "(?i:\\bHK[G]?\\b|Hong.*?Kong|\\bHKT\\b|\\bHKBN\\b|\\bHGC\\b|\\bWTT\\b|\\bCMI\\b|[^-]港)",
+]
+
+[[custom_groups]]
+name = "🇺🇸 美国接入"
+type = "select"
+rule = [
+    "(?i:\\bUS[A]?\\b|America|United.*?States|美国|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥)",
+]
+
+[[custom_groups]]
+name = "🇯🇵 日本接入"
+type = "select"
+rule = [
+    "(?i:\\bJP[N]?\\b|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日)",
+]
+
+[[custom_groups]]
+name = "🇨🇳 台湾接入"
+type = "select"
+rule = [
+    "(?i:\\bTW[N]?\\b|Taiwan|新北|彰化|\\bCHT\\b|台湾|[^-]台|\\bHINET\\b)",
+]
+
+[[custom_groups]]
+name = "🇸🇬 新加坡接入"
+type = "select"
+rule = [
+    "(?i:\\bSG[P]?\\b|Singapore|新加坡|狮城|[^-]新)",
+]
+
+[[custom_groups]]
+name = "🇰🇷 韩国接入"
+type = "select"
+rule = [
+    "(?i:\\bK[O]?R\\b|Korea|首尔|韩|韓)",
+]
+
+[[custom_groups]]
+name = "🇮🇳 印度接入"
+type = "select"
+rule = [
+    "(?i:\\bIN[D]?\\b|India|Mumbai|印度|孟买|加尔各答|贾坎德|泰米尔纳德)",
+]
+
+[[custom_groups]]
+name = "🇬🇧 英国接入"
+type = "select"
+rule = [
+    "(?i:\\bUK\\b|\\bGB[R]?\\b|England|United.*?Kingdom|London|英国|[^-]英|伦敦)",
+]
+
+[[custom_groups]]
+name = "🇫🇷 法国接入"
+type = "select"
+rule = [
+    "(?i:\\bFR[A]?\\b|France|Paris|法国|巴黎)",
+]
+
+[[custom_groups]]
+name = "🇨🇦 加拿大接入"
+type = "select"
+rule = [
+    "(?i:\\bCA[N]?\\b|Canada|Toronto|Montreal|Vancouver|加拿大|蒙特利尔|温哥华|楓葉|枫叶)",
+]
+
+[[custom_groups]]
+name = "🇦🇺 澳大利亚接入"
+type = "select"
+rule = [
+    "(?i:\\bAU[S]?\\b|Australia|Sydney|澳大利亚|澳洲|悉尼)",
+]
+
+[[custom_groups]]
+name = "🇮🇪 爱尔兰接入"
+type = "select"
+rule = [
+    "(Ireland|Dublin|爱尔兰|都柏林)",
+]
+
+[[custom_groups]]
+name = "🇷🇺 俄罗斯接入"
+type = "select"
+rule = [
+    "(?i:\\bRU[S]?\\b|Russia|Moscow|Petersburg|Siberia|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄罗斯|[^-]俄)",
+]
+
+[[custom_groups]]
+name = "🇹🇷 土耳其接入"
+type = "select"
+rule = [
+    "(Turkey|土耳其|伊斯坦布尔)",
+]
+
+[[custom_groups]]
+name = "🇦🇷 阿根廷接入"
+type = "select"
+rule = [
+    "(Argentina|阿根廷)",
+]
+
+[[custom_groups]]
+name = "🇧🇷 巴西接入"
+type = "select"
+rule = [
+    "(Brazil|Paulo|巴西|圣保罗)",
+]
+
+[[custom_groups]]
+name = "🏳️‍🌈 IPV6线路"
+type = "select"
+rule = [
+    "(ipv6|IPV6)",
+]
+
+[[custom_groups]]
+name = "🇨🇳 回国线路"
+type = "select"
+rule = [
+    "(?i:\\bC[H]?N\\b|China|回国|中国[^-]|江苏[^-]|北京[^-]|上海[^-]|广州[^-]|深圳[^-]|杭州[^-]|常州[^-]|徐州[^-]|青岛[^-]|宁波[^-]|镇江[^-]|成都[^-]|back)",
+]

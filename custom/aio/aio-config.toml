@@ -19,6 +19,13 @@ version = 1
 add_emoji = true
 # remove_old_emoji = true
 
+# Import custom emoji
+# [[emoji]]
+# match = '(流量|时间|应急)'
+# emoji = '🏳️‍🌈'
+[[emoji]]
+import = "custom/emoji.toml"
+
 
 # [[rename_node]]
 # Import rename rule

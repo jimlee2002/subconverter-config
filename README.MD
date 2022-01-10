@@ -44,9 +44,10 @@ subconverter-config
 
 ## 修改分流规则
 - 新增分流规则：`custom/single/ruleset/rulesets.toml`
-- 添加对应策略组：同步修改以下位置里的所有配置
-    - `custom/single/groups/`
-    - `custom/aio/groups`
+- 添加对应策略组：同步修改以下文件
+    - `custom/single/groups/proxy-groups-max.toml`
+    - `custom/single/groups/proxy-groups-mini.toml`
+    - `custom/aio/aio-main-groups.toml`
 
 ## 常用正则小记
 

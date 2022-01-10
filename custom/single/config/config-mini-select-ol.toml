@@ -24,16 +24,16 @@ add_emoji = true
 # match = '(流量|时间|应急)'
 # emoji = '🏳️‍🌈'
 [[emoji]]
-import = "custom/emoji.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/emoji.toml"
 
 
 # [[custom_groups]]
 # Import proxy groups
 [[custom_groups]]
-import = "custom/single/groups/proxy-groups-mini.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/single/groups/proxy-groups-mini.toml"
 
 [[custom_groups]]
-import = "custom/single/groups/node-groups-mini-auto.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/single/groups/node-groups-mini-select.toml"
 
 
 # [ruleset]
@@ -48,19 +48,19 @@ update_ruleset_on_request = false
 
 # Import rulesets
 [[rulesets]]
-import = "custom/rulesets/lan.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/rulesets/lan.toml"
 
 # [[rulesets]]
-# import = "custom/rulesets/ad.toml"
+# import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/rulesets/ad.toml"
 
 # [[rulesets]]
-# import = "custom/rulesets/ad-mini.toml"
+# import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/rulesets/ad-mini.toml"
 
 [[rulesets]]
-import = "custom/rulesets/pri&hjk.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/rulesets/pri&hjk.toml"
 
 [[rulesets]]
-import = "custom/rulesets/rulesets.toml"
+import = "https://raw.githubusercontent.com/jimlee2002/subconverter-config/main/custom/rulesets/rulesets.toml"
 
 
 # [[template_args]]

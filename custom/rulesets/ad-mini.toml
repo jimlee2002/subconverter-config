@@ -11,23 +11,23 @@
 # 广告拦截-规则修正 配合精简
 [[rulesets]]
 group = "🎯 全部直连"
-ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml"
+ruleset = "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml"
 type = "clash-classic"
 
 # 广告拦截-精简
 [[rulesets]]
 group = "🛑 全部拦截"
-ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+ruleset = "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
 type = "clash-classic"
 
 # # 隐私保护 (广告拦截已包含)
 # [[rulesets]]
 # group = "🛑 全部拦截"
-# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Privacy/Privacy_Classical.yaml"
+# ruleset = "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Privacy/Privacy_Classical.yaml"
 # type = "clash-classic"
 
 # # 反劫持 (广告拦截已包含)
 # [[rulesets]]
 # group = "🛑 全部拦截"
-# ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Hijacking/Hijacking.yaml"
+# ruleset = "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Hijacking/Hijacking.yaml"
 # type = "clash-classic"
